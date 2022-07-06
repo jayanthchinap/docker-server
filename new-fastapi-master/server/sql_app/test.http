@@ -1,4 +1,4 @@
-GET http://localhost:5000/users HTTP/1.1
+GET http://159.65.151.35/users HTTP/1.1
 
 ###
 DELETE  http://159.65.151.35/users/1 HTTP/1.1
