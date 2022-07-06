@@ -16,7 +16,7 @@ class Create extends Component {
     e.preventDefault();
     const { firstName, lastName, dob, skill, available } = this.state;
     axios
-      .post("http://159.65.151.35/users/", {
+      .post("http://localhost:5000/users/", {
         firstName,
         lastName,
         DOB: dob,

@@ -12,7 +12,7 @@ class ViewItem extends Component {
     data: [],
   };
   getData = () => {
-    axios.get("http://159.65.151.35/users/").then((response) => {
+    axios.get("http://localhost:5000/users/").then((response) => {
       this.setState({ data: response?.data });
     });
   };
@@ -27,7 +27,7 @@ class ViewItem extends Component {
           label: "Yes",
           onClick: () =>
             axios
-              .delete(`http://159.65.151.35/users/${id}`)
+              .delete(`http://localhost:5000/users/${id}`)
               .then((response) => {
                 this.getData();
               }),
