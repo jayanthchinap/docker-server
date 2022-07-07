@@ -10,7 +10,7 @@ from .database import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-origins = ["http://159.65.151.35"]
+origins = ["http://159.65.151.35:3000"]
 
 app.add_middleware(
     CORSMiddleware,
