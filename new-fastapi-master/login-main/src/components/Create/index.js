@@ -117,10 +117,18 @@ class Create extends Component {
               <label htmlFor="no">No</label>
               <br />
             </div>
+            <div className="button-container">
 
             <button type="submit" className="button">
               Submit
             </button>
+            <Link className="links" to="/view">
+            <button type="submit" className="button1">
+              View
+            </button>
+           </Link>
+            
+            </div>
           </form>
         </div>
       </div>
